@@ -1,5 +1,11 @@
 name: lentil
-version: 0.0.1
+author: Alex Fallenstedt <a.fallenstedt@gmail.com>
+homepage: https://github.com/Fallenstedt/lentil
+version: 0.0.2
 description: Library to create CLI wizards
+
+environment:
+  sdk: '<3.0.0'
+
 dev_dependencies:
   test: '1.5.2'
