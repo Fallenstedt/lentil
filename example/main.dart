@@ -1,15 +1,16 @@
-import "package:lentil/src/terminal.dart";
-import "package:lentil/src/option.dart";
+import 'package:lentil/lentil.dart';
 
 void main() {
-  var terminal = new Terminal();
-
-  var options = [
+  final options = [
     new Option('I want red', '#f00'),
     new Option('I want blue', '#00f'),
   ];
-  terminal.clearScreen();
-  terminal.printOptions(options);
-  var response = terminal.collectInput();
-  print(response);
+  final prompter = new Prompter();
+
+  final String colorCode =
+      prompter.askMultiple("What color do you like", options);
+  final bool isCakeLover = prompter.askBinary("Do you like cake?");
+
+  print(colorCode);
+  print(isCakeLover);
 }
