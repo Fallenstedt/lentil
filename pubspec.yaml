@@ -1,0 +1,5 @@
+name: lentil
+version: 0.0.1
+description: Library to create CLI wizards
+dependencies:
+  test: '1.5.2'
