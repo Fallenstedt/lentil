@@ -10,7 +10,9 @@ void main() {
   final String colorCode =
       prompter.askMultiple("What color do you like", options);
   final bool isCakeLover = prompter.askBinary("Do you like cake?");
+  final String name = prompter.askOne("What's your name?");
 
   print(colorCode);
   print(isCakeLover);
+  print(name);
 }
